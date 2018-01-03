@@ -1,0 +1,11 @@
+{
+  "name": "veera-rasp-module",
+  "version": "1.0.0",
+  "description": "Server to accept request from Alexa running on Raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bhargav Nunna",
+  "license": "ISC"
+}
