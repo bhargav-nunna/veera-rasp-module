@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 // On localhost:2314/LightOn
 app.get('/LightOn', function (req, res) {
     
-    https.get('http://192.168.1.28/Relay=ON', (resp) => {
+    http.get('http://192.168.1.28/Relay=ON', (resp) => {
     	let data = '';
     	// A chunk of data has been recieved.
     	resp.on('data', (chunk) => {
@@ -32,7 +32,7 @@ app.get('/LightOn', function (req, res) {
 // On localhost:2314/LightOff
 app.get('/LightOff', function (req, res) {
     
-    https.get('http://192.168.1.28/Relay=OFF', (resp) => {
+    http.get('http://192.168.1.28/Relay=OFF', (resp) => {
     	let data = '';
     	// A chunk of data has been recieved.
     	resp.on('data', (chunk) => {
