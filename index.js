@@ -6,7 +6,7 @@ var app = express();
 
 // on the request to root (localhost:3000/)
 app.get('/', function (req, res) {
-    res.send('<b>My</b> first express http server');
+    res.send('<b>Veera-Rasp-Module</b> Server to accept request from Alexa running on Raspberry pi.');
 });
 
 // On localhost:2314/LightOn
